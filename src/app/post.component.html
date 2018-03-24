@@ -1,11 +1,65 @@
 <div class="row">
-  <div class="col-md-3">
-    Offer: {{post.offer}} , Level: {{post.offerLevel}}
+  <div class="col-6">
+    <div class="row">
+      <div class="col-6">
+        <div class="row">
+          Offer
+        </div>
+        <div class="row">
+          {{post.offer}}
+        </div>
+        <div class="row">
+          <img src="../assets/flags/english.svg" width="60" height="40" alt="">
+        </div>
+        <div class="row">
+          <b>{{post.offerLevel}}</b>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row">
+          Learn
+        </div>
+        <div class="row">
+          {{post.wantToLearn}}
+        </div>
+        <div class="row">
+          <img src="../assets/flags/polish.svg" width="60" height="40" alt="">
+        </div>
+        <div class="row">
+          <b>{{post.wantToLearnLevel}}</b>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      some short comment to the post
+    </div>
   </div>
-  <div class="col-md-3">
-    Want to learn : {{post.wantToLearn}} , Level: {{post.offerLevel}}
-  </div>
-  <div class="col-md-6">
-    {{post.user.name}} , {{post.user.surname}} , {{post.user.gender}} , {{post.user.age}}, {{post.postDate}}
+  <div class="col-6">
+    <div class="row h-100">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <span class="badge badge-success float-right">New</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <img src="../assets/placeholder.svg" width="60" height="60" alt="">
+          </div>
+          <div class="col-8">
+            <div class="row">
+              {{post.user.name}} {{post.user.surname}}
+            </div>
+            <div class="row">{{post.user.gender}} , {{post.user.age}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 align-self-end">
+          <button type="button" class="btn btn-secondary btn-sm border-0 rounded-0"><i class="fa fa-play-circle-o"></i> More</button>
+        <div class="float-right">{{post.postDate}}</div>
+      </div>
+    </div>
   </div>
 </div>
+
