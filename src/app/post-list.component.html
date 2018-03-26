@@ -1,5 +1,7 @@
 <div class="row" style="margin-top: 50px;">
-  <div class="col-lg-6" style="margin-bottom: 20px;" *ngFor="let postItem of posts" >
+  <div class="col-lg-6" *ngFor="let postItem of posts" style="margin-bottom: 40px;">
+    <div style="padding-left: 20px; padding-bottom: 5px;  border: 1px solid #cecece; border-radius: 10px;">
       <post [post]="postItem"></post>
+    </div>
   </div>
 </div>
