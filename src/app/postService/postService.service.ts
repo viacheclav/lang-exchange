@@ -6,6 +6,10 @@ export class PostService {
   getPosts() {
     return posts;
   }
+
+  getPost(id: number) {
+    return posts.find(post => post.id === id);
+  }
 }
 
 const posts = [
