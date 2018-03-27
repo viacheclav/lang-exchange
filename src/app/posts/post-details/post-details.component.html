@@ -1,1 +1,57 @@
-{{post.user.name}} {{post.user.surname}}
+<div class="row" style="margin-top: 40px; border: 1px solid #cecece; padding: 10px;">
+  <div class="col-12">
+    <h2> {{post.offer}} for {{post.wantToLearn}}</h2>
+  </div>
+
+  <div class="col-9">
+    <div class="row">
+      <div class="col-6">
+        <div class="col-12">
+          {{post.offer}}, {{post.offerLevel}}
+        </div>
+        <div class="col-12">
+          <img src="../assets/flags/english.svg" width="60" height="40" alt="">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row">
+          {{post.wantToLearn}}, {{post.wantToLearnLevel}}
+        </div>
+        <div class="row">
+          <img src="../assets/flags/polish.svg" width="60" height="40" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-12">
+        {{post.comment}}
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:40px;">
+      <div class="col-12">
+        <form>
+          <div class="form-group">
+            <label for="comment">Your comment</label>
+            <textarea class="form-control" id="comment" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-3 align-items-center" style="border-left: 1px solid #cecece;">
+    <div class="row justify-content-center align-items-center">
+      <img src="../assets/placeholder.svg" width="60" height="60" alt="">
+    </div>
+    <div class="row justify-content-center align-items-center">
+      {{post.user.name}} {{post.user.surname}}
+    </div>
+    <div class="row justify-content-center align-items-center">
+      {{post.user.gender}} , {{post.user.age}}
+    </div>
+  </div>
+</div>
